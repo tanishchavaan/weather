@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Weather App</title>
+<link rel="stylesheet" href="./style.css">
+
+
+</head>
+<body>
+
+<div class="container">
+  <h1>Weather App</h1>
+  <div>
+    <input type="text" id="cityInput" placeholder="Enter city name..." />
+    <button id="searchBtn">Check Weather</button>
+  </div>
+  <div class="weather-info" id="weatherInfo" style="display:none;">
+    <h2 id="cityName"></h2>
+    <img id="weatherIcon" alt="weather icon" />
+    <p id="description" style="text-transform: capitalize; font-weight: bold;"></p>
+    <p><span id="temp"></span>°C | Feels like: <span id="feelsLike"></span>°C</p>
+    <p>Humidity: <span id="humidity"></span>%</p>
+    <p>Wind: <span id="wind"></span> m/s</p>
+  </div>
+  <p class="error" id="errorMsg"></p>
+</div>
+<script src="./script.js"></script>
+<footer style=color:black>@2025 Tanish Chavan | All rights reserved</footer>
+
+</body>
+</html>

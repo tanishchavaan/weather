@@ -1,0 +1,62 @@
+/* Reset & basics */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0; padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.7s ease-in-out;
+  }
+
+  .container {
+    background: rgba(0,0,0,0.5);
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 400px;
+    margin: auto;
+  }
+
+  input[type="text"] {
+    padding: 0.7rem;
+    width: 70%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+  }
+
+  button {
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    background-color: #1e90ff;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background-color: #187bcd;
+  }
+
+  .weather-info {
+    margin-top: 1.5rem;
+  }
+
+  .weather-info img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .error {
+    margin-top: 1rem;
+    color: #ff4c4c;
+  }
